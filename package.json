@@ -1,7 +1,7 @@
 {
   "title": "RedditOpenUnread",
   "name": "reddit-open-unread",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opens unread reddit pages",
   "main": "index.js",
   "author": "Malte Lenz",

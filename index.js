@@ -21,8 +21,11 @@ function urlVisited(urlin) {
 	  { }
 	).on("end", function (results) {
 			if (results.length == 0) {
-				// Not visited, tell page
-				tabs.open(urlin);
+				// Not visited, open new page
+				tabs.open({
+					url: urlin,
+					inBackground: true
+				});
 			}
 		}
 	);
