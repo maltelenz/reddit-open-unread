@@ -1,0 +1,18 @@
+{
+  "title": "RedditOpenUnread",
+  "name": "reddit-open-unread",
+  "version": "0.0.1",
+  "description": "Opens unread reddit pages",
+  "main": "index.js",
+  "author": "Malte Lenz",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "reddit",
+    "open",
+    "unread"
+  ]
+}
