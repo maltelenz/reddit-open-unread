@@ -12,7 +12,7 @@ var button = buttons.ActionButton({
     "32": "./icon-32.png",
     "64": "./icon-64.png"
   },
-  onClick: handleClick
+  onClick: reloadTab
 });
 
 function urlVisited(urlin) {
@@ -29,6 +29,11 @@ function urlVisited(urlin) {
 			}
 		}
 	);
+}
+
+function reloadTab(state) {
+  tabs.activeTab.reload();
+  tabs.activeTab.on("ready", handleClick);
 }
 
 function handleClick(state) {
