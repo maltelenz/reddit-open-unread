@@ -44,4 +44,9 @@ function handleClick(state) {
   worker.port.on("url-to-check", function(response) {
     urlVisited(response);
   });
+
+  var idx = tabs.activeTab.index;
+  if (tabs.length > idx) {
+    tabs[idx + 1].activate();
+  }
 }
