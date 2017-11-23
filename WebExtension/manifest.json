@@ -1,0 +1,37 @@
+{
+
+  "manifest_version": 2,
+  "name": "RedditOpenUnread",
+  "version": "1.0.1",
+
+  "description": "Opens unread reddit links in open tab",
+
+  "icons": {
+    "64": "icons/icon-64.png"
+  },
+
+  "permissions": [
+      "activeTab",
+      "history",
+      "tabs"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["open-unread.js",
+            "jquery-2.2.1.min.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  }
+}

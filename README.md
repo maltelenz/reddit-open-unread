@@ -1,9 +1,10 @@
 #RedditOpenUnread
 Opens unread reddit pages
 
-#Notes
-[SDK documentation](https://developer.mozilla.org/en-US/Add-ons/SDK)
+##To package
 
-[API Keys for signing](https://addons.mozilla.org/en-US/developers/addon/api/key/)
+Inside WebExtension folder, run:
 
-[Signing](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#jpm_sign)
+zip -r -FS ../reddit-open-unread.zip *
+
+Upload to https://addons.mozilla.org/en-US/developers/ for signing.
